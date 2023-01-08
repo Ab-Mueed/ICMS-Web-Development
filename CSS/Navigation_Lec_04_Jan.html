@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>CSS Styling</title>
+    <style>
+        .a{
+            background: url('abs.png');   /*Inserts image to background*/           
+            width: 100%;                  /*Sets Iamge Width*/
+            height: 100%;                 /*Sets Iamge Height*/
+            background-size: cover;       /*Specifies the size of bg image*/
+            background-repeat: no-repeat;
+            background-position: left;
+        
+        }
+        .abc {
+            text-decoration:red;        
+            color:rgb(7, 44, 78);                             /*Applies color to text*/
+            font-family:Arial, Helvetica, sans-serif;           /* Used to select text font*/
+            font-weight: bold;                                  /* Decides degree of blackness or thickness for a text*/
+            letter-spacing: 10px;                               /* Specifies the space/indentation between the letters of a word*/
+            
+        }
+
+        .abc:hover {
+            color:black;                                      /*Specifies the what color will the text change to when a pointer is hovered over it*/
+        }
+
+        .def {
+            list-style: none;                                    /* Used to set the bullet style for Unordered list*/
+            display:inline;                                      /* Changes the Display sequence of the List */
+            width: 300px;                                        
+            margin-left: 20px;                                    /* Creates a Margin space from the left*/
+    
+            
+        }
+
+        ul {
+            height: 50px;                                         
+            text-align: left;                                      /*Used to align the text to different positions*/
+            line-height: 30px;                                     
+            
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <ul>
+            <li class="def">
+                <a href="https://www.callofduty.com/" class="abc"> HOME</a>
+
+            </li>
+            <li class="def">
+                <a href="" class="abc">ABOUT</a>
+            </li>
+            <li class="def">
+                <a href="https://support.activision.com/" class="abc">CONTACT</a>
+            </li>
+            <li class="def">
+                <a href="https://www.callofduty.com/ghosts" class="abc">SERVICES</a>
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
