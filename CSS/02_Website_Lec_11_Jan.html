@@ -1,0 +1,410 @@
+<html>
+
+<head>
+    <meta name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            height: 70px;
+            width: 100%;
+            background-color: #2c315d;
+            position: fixed;
+
+
+
+        }
+
+        .nav img {
+            height: 50px;
+            width: 170px;
+            position: absolute;
+            left: 300px;
+            top: 10px;
+        }
+
+
+        .nav li {
+            list-style: none;
+            display: inline;
+            font-size: 15px;
+            padding: 30px;
+            line-height: 60px;
+        }
+
+        .nav ul {
+            text-align: center;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: azure;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+        }
+
+        .main {
+            background: url('Darkbloom.png');
+            height: 700px;
+            width: 100%;
+            position: relative;
+            top: 70px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main p {
+
+            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #p2 {
+            color: white;
+            font-size: 130px;
+            top: 110px;
+            left: 400px;
+            font-weight: bold;
+        }
+
+        #p1 {
+            color: rgb(47, 124, 168);
+            top: 50px;
+            left: 400px;
+        }
+
+        .main button {
+            position: relative;
+            top: 600px;
+            left: 400px;
+            height: 60px;
+            width: 150px;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .flex {
+            background-color: rgba(21, 23, 42, 255);
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .flex>div {
+            background-color: #2d3360;
+            height: 300px;
+            width: 350px;
+            border: 2px solid white;
+            position: relative;
+            top: 140px;
+            left: 320px;
+            margin-left: 30px;
+            justify-content: space-evenly;
+
+        }
+
+        .flex p {
+            font-size: 20px;
+            color: white;
+            position: relative;
+            left: 50px;
+            line-height: 300px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        #s1,
+        #s2,
+        #s3,#s4,#s5,#s6,#s7,#s8,#s9,#S10,#s11,#s12 {
+            color: aqua;
+            position: relative;
+            font-size: 40px;
+            top: 80px;
+            left: 50px;
+        }
+
+        .main2 {
+            background-color: rgba(21, 23, 42, 255);
+            height: 1600px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .main2 h1 {
+            position: relative;
+            left: 350px;
+            top: 70px;
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .main2>div {
+            background-color: #2d3360;
+            height: 300px;
+            width: 350px;
+            border: 2px solid white;
+            position: absolute;
+        }
+
+        .d9 {
+            top: 2180px;
+            left: 1120px;
+            font-size: 30px;
+        }
+
+        .d8 {
+            top: 2180px;
+            left: 730px;
+        }
+
+        .d7 {
+            top: 2180px;
+            left: 340px;
+        }
+
+        .d6 {
+            left: 1120px;
+            top: 1790px;
+        }
+
+        .d5 {
+            left: 730px;
+            top: 1790px;
+
+        }
+
+        .d4 {
+            left: 340px;
+            top: 1790px;
+        }
+
+        .d3 {
+            left: 1120px;
+            top: 1400px;
+        }
+
+        .d2 {
+            left: 730px;
+            top: 1400px;
+        }
+
+        .d1 {
+            left: 340px;
+            top: 1400px;
+        }
+        .main2 p{
+            font-size: 20px;
+            color: white;
+            position: relative;
+            left: 50px;
+            line-height: 300px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        .main3{
+            height: 500px;
+            width: 100%;
+            background: url('abstract2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+
+        }
+        .main3 h1 {
+            position: relative;
+            left: 630px;
+            top: 255px;
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+        }
+        .main3 button{
+            position: relative;
+            top: 320px;
+            left: 820px;
+            height: 60px;
+            width: 150px;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .end{
+            height: 500px;
+            width: 100%;
+            background-color:rgb(12, 12, 12) ;
+            position: relative;
+        }
+        .end img{
+            height:70px;
+            width: 250px;
+            position: relative;
+            left: 400px;
+            top:150px;
+        }
+        .end li{
+            list-style: none;
+            font-size: 15px;
+            padding: 10px;
+            color: white;
+            position: relative;
+            left: 750px;
+            top: 50px;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .end #visit{
+            position: relative;
+            left: 1300px;
+            top: -210px;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        .end #address{
+            position: relative;
+            color: white;
+            size: 15px;
+            top: -190px;
+            left: 1300px;
+        }
+        .end #subscribe{
+            position: relative;
+            left: 1300px;
+            top: -130px;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        .end #updates{
+            position: relative;
+            color: white;
+            size: 15px;
+            top: -110px;
+            left: 1300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <img src="KTS-Logo.png" alt="">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">SUPPLIES</a></li>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">INTERNSHIPS</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <p id="p1">CREATIVE MINDS, CREATIVE WORK</p>
+        <p id="p2">KASHTECH<br>SOLUTIONS</p>\
+        <button id="b1">GET STARTED</button>
+
+    </div>
+    <div class="flex">
+        <div>
+            <i class="fa fa-paper-plane" id="s1"></i>
+            <p>Future Concept.</p>
+        </div>
+        <div>
+            <i class="fa fa-brain" id="s2"></i>
+            <p>The Big Ideas.</p>
+        </div>
+        <div>
+            <i class="fa fa-lightbulb" id="s3"></i>
+            <p>Creative Solutions.</p>
+        </div>
+    </div>
+
+    <div class="main2">
+        <h1>Services.</h1>
+        <br>
+        <div class="d1">
+            <i class="fa-solid fa-chart-simple" id="s4"></i>
+            <p>Digital Stategy</p>
+        </div>
+        <div class="d2">
+            <i class="fa fa-pencil" id="s5"></i>
+            <p>UI/UX</p>
+        </div>
+        <div class="d3">
+            <i class="fa-solid fa-code"  id="s6"></i>
+            <p>Web Development</p>
+        </div>
+        <div class="d4">
+            <i class="fa-solid fa-mobile-screen" id="s7"></i>
+            <p>Application Development</p>
+        </div>
+        <div class="d5">
+            <i class="fa-solid fa-chart-line" id="s8"></i>
+            <p>SEO</p>
+        </div>
+        <div class="d6">
+            <i class="fa-solid fa-globe" id="s9"></i>
+            <p>IOT</p>
+        </div>
+        <div class="d7">
+            <i class="fa-solid fa-laptop-code" id="s10"></i>
+            <p>Software Development</p>
+        </div>
+        <div class="d8">
+            <i class="fa-solid fa-cloud" id="s11"></i>
+            <p>Web Hosting</p>
+        </div>
+        <div class="d9">
+            <i class="fa-solid fa-icons" id="s12"></i>
+            <p>Logo Making</p>
+        </div>
+    </div>
+    <div class="main3">
+        <p>
+
+        </p>
+        <h1>Have a Project in Mind?</h1>
+        <button>Contact Us</button>
+    </div>
+    <div class="end">
+        <img src="KTS-Logo.png" alt="">
+        <ul>
+            <li>Useful Links</li>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Internship</li>
+            <li>Privacy Policy</li>
+        </ul>
+        <h3 id="visit">Visit Us</h3>
+        <p id="address">
+            2 Floor, Rizvi Building, Mk Chowk,<br> Hawal, Srinagar, Jammu and Kashmir
+        </p>
+        <h3 id="subscribe">Subscribe Now</h3>
+        <p id="updates">
+            Don’t miss our future updates! Get<br> Subscribed Today!
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Intro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .a {
+        height: 150px;
+        border: 1px solid white;
+
+    }
+
+    .a2 {
+        height: 350px;
+        border: 1px solid white;
+    }
+
+    .b {
+        height: 500px;
+        border: 1px solid white;
+    }
+
+    #g1 {
+        background-color: palevioletred;
+    }
+
+    #g2 {
+        background-color: aquamarine;
+    }
+
+    #g3 {
+        background-color: rgba(29, 104, 79, 0.87);
+    }
+
+    #g4 {
+        background-color: rgb(10, 109, 190);
+    }
+
+    #g5 {
+        background-color: rgb(4, 93, 116);
+    }
+
+    #g6 {
+        background-color: rgb(64, 205, 248);
+    }
+
+    #g7 {
+        background-color: rgb(241, 94, 8);
+    }
+
+    #g8 {
+        background-color: salmon;
+    }
+</style>
+
+<body>
+    <div class="row text-center">                            <!--Defining a root row of a table-->
+        <div class="col-md-6 ">                              <!-- Spanning 1st column upto 6 column-->
+            <div class="row">                                <!--Defining a row inside of that column, Now we can define columns inside of this row and can take 
+                                                                 a space of 12 columns, like in General-->
+                <div class="col-md-3 a" id="g1">             <!--Now defining a column of size 3 inside of this row-->
+                    1
+                </div>
+                <div class="col-md-7 a" id="g2">              <!--Defining a column of size 7 inside of this row, now total is 3+7= 10-->
+                    2
+                </div>
+                <div class="col-md-2 a" id="g3">              <!--Defining a column of size 3 inside of this row, now this row is exhausted bcz 3+7+2=12-->
+                    3
+                </div>
+                <div class="col-md-3 a2" id="g7">             <!--Now when we define another column of size 3, it will result in creation of new row(i.e Row2) beneath the previous 
+                                                              row(i.e Row1) bcz the previous row(i.e Row1) has exhausted the column capacity i.e 12, and the size of this new 
+                                                              row(i.e Row2) will also be 6 just like its previous row, now this row can be used to create column, like in General 
+                                                              and this statement will also create a column of size 3 in Row2 only  -->
+                    7
+                </div>
+                <div class="col-md-9 a2" id="g8">             <!--Defining a column of size 9 inside of Row2, this will lead in exhausting of space inside of Row2 bcz 3+9=12 -->
+                    8
+                </div>
+            </div>                                             <!--Now we will close the Row1 and Row2-->
+        </div>
+        <div class="col-md-2 b" id="g4">                       <!--Since initially we spanned 1st column upto 6 inside the root row, we now have been left with capacity of 6
+                                                                bcz 12-6=6, we will now use that space only to create 3 columns and this statement will span a cloumn
+                                                                upto 2 size -->
+            4
+        </div>
+        <div class="col-md-3 b" id="g5">                       <!--Since first column took 2 span size, it means now 6-2= 4 span size is left the for the other columns to
+                                                                accomodate and this statement will span a column upto 3 size-->
+            5
+        </div>
+        <div class="col-md-1 b" id="g6">                        <!--At last we are left with 6-2-3=1 span size, now the last column can take only span size of 1 and hence
+                                                                we successfully created 3 columns inside of 6 sized root Column-->
+            6
+        </div>
+    </div>
+</body>
+
+</html>
